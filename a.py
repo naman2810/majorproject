@@ -186,7 +186,7 @@ if uploaded_file is not None:
     with col2:
         img = image.load_img(uploaded_file, target_size=(224, 224))
         st.markdown("<div class='image-container'>", unsafe_allow_html=True)
-        st.image(img, caption='Uploaded Tomato Leaf 🍅', use_column_width=True)
+        st.image(img, caption='Uploaded Tomato Leaf 🍅', use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
     if st.button("Diagnose Leaf", key="diagnose"):
